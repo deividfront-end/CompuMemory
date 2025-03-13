@@ -177,6 +177,7 @@ background-color: #000000;
         background-image: url(./img/FUNDO.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: #d70303;
     }
 
 
@@ -194,18 +195,18 @@ background-color: #000000;
     .container-titulo h1 {
         font-size: 22px;
         letter-spacing: 2px;
-        font-family:cursive!important;
+       
     }
 
     .container-cartas {
       height: 560px;
+      margin-top: 40px;
         width:auto !important; /* Usando 100% da largura */
         display: flex;
         justify-content: center;
         justify-items: center;
-        margin-bottom: 0px;
-     
-        padding-top:40px;
+        margin-bottom: 53px;
+       
     }
 
 
@@ -246,20 +247,13 @@ background-color: #000000;
   
 
     footer {
-      margin-top: 30px;
-      margin-bottom: 0px;
+      margin-top: 0px;
+     
         display: flex;
         justify-content: center;
         justify-items: center;
         background-color: #ff0000!important;
     }
 
-    .container-rodape {
-      text-align: center;
-        margin-top: 16px; /* Ajuste o espaçamento */
-        padding: 1px;
-        color: white;
-        background-color: rgba(255, 0, 0, 0.969) !important;
-        text-align: center;
-    }
+  
 }
