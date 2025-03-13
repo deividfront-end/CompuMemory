@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-image: url(./img/FUNDO.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  }
+
+.memory-game {
+
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    grid-gap: 90px;
+    gap: 5px;
+   
+}
+
+.memory-card {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+
+.memory-card img {
+  height: 190px;
+  width: 190px;
+background-color: aliceblue;
+
+}
+
+
+
+
+.memory-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    
+}
+
+
+.container-titulo{
+
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    background-color: rgb(196, 10, 10);
+}
+
+.container-botao-recomeçar{
+    padding: 10px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+    color: rgb(246, 240, 240);
+}
+
+
+.botao-diamante {
+    width: 150px;
+    height: 50px;
+    background-color: #ff0000; /* Cor azul padrão */
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease; /* Adiciona uma transição suave */
+  }
+  
+  .botao-diamante:hover {
+   
+    background-color: #d70303; /* Cor roxa no hover */
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
+.container-cartas{  
+margin-top: 10px;
+display: flex;
+justify-content: center;
+flex-direction: row;
+padding: 5px 5px 5px;
+border-radius: 10px;
+
+}
+
+
+.Frontpar1{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.Backpar1{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: contain;
+    border: solid 2px;
+}
+
+.front-face {
+    background-color: #e60606;
+    transform: rotateY(180deg);
+}
+
+.back-face {
+    background-color: #000000;
+}
+
+
+.front-face:hover {
+  border: solid 2px ;
+  border-color: rgb(0, 0, 0);
+    background-color: #000000;
+    transform: rotateY(180deg);
+}
+
+.back-face:hover {
+ 
+  transition: 0.4s;
+   border: solid 2px ;
+   border-color: rgb(0, 0, 0);
+    background-color: #000000da;
+    box-shadow: #ff0000;
+}
+
+
+
+
+footer{
+  margin-top: 114px;
+  display: flex;
+ padding: 20px;
+  justify-content: center;
+  justify-items: center;
+background-color: #000000;
+}
+
+
+.container-rodape{
+ 
+    color: white;
+  
+}
+
+
+  @media (max-width: 415px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url(./img/FUNDO.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .container-botao-recomeçar {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(252, 0, 0);
+        background-color: #00000038;
+    }
+
+    .container-titulo h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-family:cursive!important;
+    }
+
+    .container-cartas {
+      height: 560px;
+        width:auto !important; /* Usando 100% da largura */
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 0px;
+     
+        padding-top:40px;
+    }
+
+
+    .botao-diamante {
+      width: 100px;
+      height: 30px;
+      background-color: #ff0000; /* Cor azul padrão */
+      color: rgb(255, 255, 255);
+      border: solid 1px;
+      cursor: pointer;
+      border-radius: 12px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.2s ease; /* Adiciona uma transição suave */
+    }
+    .memory-card img {
+      height: 140px;
+      width: 100px;
+    background-color: aliceblue;
+    
+    }
+    
+    .memory-game {
+      grid-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 90px);
+    }
+  
+  .memory-card {
+      width: 90px;
+      height: 90px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+  }
+  
+
+    footer {
+      margin-top: 30px;
+      margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        background-color: #ff0000!important;
+    }
+
+    .container-rodape {
+      text-align: center;
+        margin-top: 16px; /* Ajuste o espaçamento */
+        padding: 1px;
+        color: white;
+        background-color: rgba(255, 0, 0, 0.969) !important;
+        text-align: center;
+    }
+}
