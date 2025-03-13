@@ -1,3 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+
+
 body {
     margin: 0;
     background-image: url(./img/FUNDO.jpg);
@@ -54,7 +60,7 @@ background-color: aliceblue;
 
 .container-titulo{
 
-    font-family: cursive;
+    font-family:'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -194,8 +200,8 @@ background-color: #000000;
 
     .container-titulo h1 {
         font-size: 22px;
-        letter-spacing: 2px;
-       
+        
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif!important;
     }
 
     .container-cartas {
