@@ -5,6 +5,21 @@
 
 
 body {
+
+
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .whatsapp-icon img {
+    width: 60px; /* Ajuste o tamanho do ícone aqui */
+    height: 60px;
+  }
+
     margin: 0;
     background-image: url(./img/FUNDO.jpg);
     background-size: cover;
@@ -15,15 +30,15 @@ body {
 .memory-game {
 
     display: grid;
-    grid-template-columns: repeat(4, 190px);
-    grid-gap: 90px;
+    grid-template-columns: repeat(4, 90px);
+   
     gap: 5px;
    
 }
 
 .memory-card {
-    width: 190px;
-    height: 190px;
+    width: 90px;
+    height: 90px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -31,10 +46,9 @@ body {
 
 
 .memory-card img {
-  height: 190px;
-  width: 190px;
-background-color: aliceblue;
-
+  height: 90px;
+  width: 90px;
+  
 }
 
 
@@ -185,7 +199,10 @@ background-color: #000000;
         background-repeat: no-repeat;
         background-color: #d70303;
     }
-
+    .whatsapp-icon img {
+      width: 50px;
+      height: 50px;
+    }
 
     .container-botao-recomeçar {
         padding: 10px;
